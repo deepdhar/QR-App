@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">QR_Generator</string>
+    <string name="app_name">QR App</string>
+    <string name="default_scanned_text">Your scanned text/link will appear here</string>
 </resources>
