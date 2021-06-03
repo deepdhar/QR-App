@@ -9,43 +9,35 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/top_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/dancing_script"
+        android:text="QR Scanner"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:id="@+id/top_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/top_tv"
         android:orientation="horizontal">
-
-        <!--        <EditText-->
-        <!--            android:id="@+id/input_et"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="3"-->
-        <!--            android:background="@drawable/bg"-->
-        <!--            android:hint="Enter text or link"-->
-        <!--            android:textSize="16sp"-->
-        <!--            android:padding="12dp"/>-->
-
-        <!--        <Button-->
-        <!--            android:id="@+id/generate_bn"-->
-        <!--            android:layout_width="0dp"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="1.2"-->
-        <!--            android:layout_marginTop="8dp"-->
-        <!--            android:backgroundTint="#8A2BE2"-->
-        <!--            android:text="Generate"-->
-        <!--            android:textAllCaps="false"-->
-        <!--            android:gravity="center"/>-->
 
         <EditText
             android:id="@+id/input_et"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
             android:layout_weight="3"
             android:background="@drawable/bg"
             android:hint="Enter text or link"
             android:padding="12dp"
             android:textColorHint="#222B61"
-            android:layout_marginRight="8dp"
             android:textSize="16sp" />
 
         <TextView
@@ -53,38 +45,37 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1.1"
-            android:text="Generate"
-            android:textColor="@color/white"
             android:background="@drawable/button_bg"
             android:gravity="center"
-            android:textSize="14sp"
-            android:textAllCaps="false"/>
+            android:text="Generate"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
     </LinearLayout>
-
 
 
     <ImageView
         android:id="@+id/output_iv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:adjustViewBounds="true"
         android:background="@drawable/bg"
         android:padding="20dp"
-        android:src="@drawable/sample_img"
         android:scaleType="fitCenter"
-        android:layout_centerInParent="true" />
+        android:src="@drawable/sample_img" />
 
     <Button
         android:id="@+id/save_gallery_bn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/output_iv"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
         android:backgroundTint="#3CB371"
-        android:text="Save to Gallery"
         android:fontFamily="sans-serif-medium"
-        android:textAllCaps="false"
-        android:layout_below="@id/output_iv"/>
+        android:text="Save to Gallery"
+        android:textAllCaps="false" />
 
 </RelativeLayout>
